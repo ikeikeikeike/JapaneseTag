@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8D6340815DA7B6A00EDCBAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6340715DA7B6A00EDCBAC /* UIKit.framework */; };
+		D8D6340A15DA7B6A00EDCBAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6340915DA7B6A00EDCBAC /* Foundation.framework */; };
+		D8D6340C15DA7B6A00EDCBAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6340B15DA7B6A00EDCBAC /* CoreGraphics.framework */; };
+		D8D6341215DA7B6A00EDCBAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8D6341015DA7B6A00EDCBAC /* InfoPlist.strings */; };
+		D8D6341415DA7B6A00EDCBAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D6341315DA7B6A00EDCBAC /* main.m */; };
+		D8D6341815DA7B6A00EDCBAC /* JTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D6341715DA7B6A00EDCBAC /* JTAppDelegate.m */; };
+		D8D6341B15DA7B6A00EDCBAC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D6341915DA7B6A00EDCBAC /* MainStoryboard.storyboard */; };
+		D8D6341E15DA7B6A00EDCBAC /* JTFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D6341D15DA7B6A00EDCBAC /* JTFirstViewController.m */; };
+		D8D6342015DA7B6A00EDCBAC /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D6341F15DA7B6A00EDCBAC /* first.png */; };
+		D8D6342215DA7B6A00EDCBAC /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D6342115DA7B6A00EDCBAC /* first@2x.png */; };
+		D8D6342515DA7B6A00EDCBAC /* JTSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D6342415DA7B6A00EDCBAC /* JTSecondViewController.m */; };
+		D8D6342715DA7B6A00EDCBAC /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D6342615DA7B6A00EDCBAC /* second.png */; };
+		D8D6342915DA7B6A00EDCBAC /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D6342815DA7B6A00EDCBAC /* second@2x.png */; };
+		D8D6343115DA7B6A00EDCBAC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6343015DA7B6A00EDCBAC /* SenTestingKit.framework */; };
+		D8D6343215DA7B6A00EDCBAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6340715DA7B6A00EDCBAC /* UIKit.framework */; };
+		D8D6343315DA7B6A00EDCBAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6340915DA7B6A00EDCBAC /* Foundation.framework */; };
+		D8D6343B15DA7B6B00EDCBAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8D6343915DA7B6B00EDCBAC /* InfoPlist.strings */; };
+		D8D6343E15DA7B6B00EDCBAC /* JapaneseTagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D6343D15DA7B6B00EDCBAC /* JapaneseTagTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8D6343415DA7B6A00EDCBAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8D633FA15DA7B6A00EDCBAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8D6340215DA7B6A00EDCBAC;
+			remoteInfo = JapaneseTag;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8D6340315DA7B6A00EDCBAC /* JapaneseTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D6340715DA7B6A00EDCBAC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8D6340915DA7B6A00EDCBAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D8D6340B15DA7B6A00EDCBAC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D8D6340F15DA7B6A00EDCBAC /* JapaneseTag-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JapaneseTag-Info.plist"; sourceTree = "<group>"; };
+		D8D6341115DA7B6A00EDCBAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8D6341315DA7B6A00EDCBAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D8D6341515DA7B6A00EDCBAC /* JapaneseTag-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JapaneseTag-Prefix.pch"; sourceTree = "<group>"; };
+		D8D6341615DA7B6A00EDCBAC /* JTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTAppDelegate.h; sourceTree = "<group>"; };
+		D8D6341715DA7B6A00EDCBAC /* JTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTAppDelegate.m; sourceTree = "<group>"; };
+		D8D6341A15DA7B6A00EDCBAC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D8D6341C15DA7B6A00EDCBAC /* JTFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTFirstViewController.h; sourceTree = "<group>"; };
+		D8D6341D15DA7B6A00EDCBAC /* JTFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTFirstViewController.m; sourceTree = "<group>"; };
+		D8D6341F15DA7B6A00EDCBAC /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		D8D6342115DA7B6A00EDCBAC /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		D8D6342315DA7B6A00EDCBAC /* JTSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSecondViewController.h; sourceTree = "<group>"; };
+		D8D6342415DA7B6A00EDCBAC /* JTSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTSecondViewController.m; sourceTree = "<group>"; };
+		D8D6342615DA7B6A00EDCBAC /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		D8D6342815DA7B6A00EDCBAC /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		D8D6342F15DA7B6A00EDCBAC /* JapaneseTagTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapaneseTagTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D6343015DA7B6A00EDCBAC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D8D6343815DA7B6B00EDCBAC /* JapaneseTagTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JapaneseTagTests-Info.plist"; sourceTree = "<group>"; };
+		D8D6343A15DA7B6B00EDCBAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8D6343C15DA7B6B00EDCBAC /* JapaneseTagTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JapaneseTagTests.h; sourceTree = "<group>"; };
+		D8D6343D15DA7B6B00EDCBAC /* JapaneseTagTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JapaneseTagTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8D6340015DA7B6A00EDCBAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D6340815DA7B6A00EDCBAC /* UIKit.framework in Frameworks */,
+				D8D6340A15DA7B6A00EDCBAC /* Foundation.framework in Frameworks */,
+				D8D6340C15DA7B6A00EDCBAC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D6342B15DA7B6A00EDCBAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D6343115DA7B6A00EDCBAC /* SenTestingKit.framework in Frameworks */,
+				D8D6343215DA7B6A00EDCBAC /* UIKit.framework in Frameworks */,
+				D8D6343315DA7B6A00EDCBAC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8D633F815DA7B6A00EDCBAC = {
+			isa = PBXGroup;
+			children = (
+				D8D6340D15DA7B6A00EDCBAC /* JapaneseTag */,
+				D8D6343615DA7B6A00EDCBAC /* JapaneseTagTests */,
+				D8D6340615DA7B6A00EDCBAC /* Frameworks */,
+				D8D6340415DA7B6A00EDCBAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8D6340415DA7B6A00EDCBAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6340315DA7B6A00EDCBAC /* JapaneseTag.app */,
+				D8D6342F15DA7B6A00EDCBAC /* JapaneseTagTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8D6340615DA7B6A00EDCBAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6340715DA7B6A00EDCBAC /* UIKit.framework */,
+				D8D6340915DA7B6A00EDCBAC /* Foundation.framework */,
+				D8D6340B15DA7B6A00EDCBAC /* CoreGraphics.framework */,
+				D8D6343015DA7B6A00EDCBAC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8D6340D15DA7B6A00EDCBAC /* JapaneseTag */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6341615DA7B6A00EDCBAC /* JTAppDelegate.h */,
+				D8D6341715DA7B6A00EDCBAC /* JTAppDelegate.m */,
+				D8D6341915DA7B6A00EDCBAC /* MainStoryboard.storyboard */,
+				D8D6341C15DA7B6A00EDCBAC /* JTFirstViewController.h */,
+				D8D6341D15DA7B6A00EDCBAC /* JTFirstViewController.m */,
+				D8D6341F15DA7B6A00EDCBAC /* first.png */,
+				D8D6342115DA7B6A00EDCBAC /* first@2x.png */,
+				D8D6342315DA7B6A00EDCBAC /* JTSecondViewController.h */,
+				D8D6342415DA7B6A00EDCBAC /* JTSecondViewController.m */,
+				D8D6342615DA7B6A00EDCBAC /* second.png */,
+				D8D6342815DA7B6A00EDCBAC /* second@2x.png */,
+				D8D6340E15DA7B6A00EDCBAC /* Supporting Files */,
+			);
+			path = JapaneseTag;
+			sourceTree = "<group>";
+		};
+		D8D6340E15DA7B6A00EDCBAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6340F15DA7B6A00EDCBAC /* JapaneseTag-Info.plist */,
+				D8D6341015DA7B6A00EDCBAC /* InfoPlist.strings */,
+				D8D6341315DA7B6A00EDCBAC /* main.m */,
+				D8D6341515DA7B6A00EDCBAC /* JapaneseTag-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8D6343615DA7B6A00EDCBAC /* JapaneseTagTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6343C15DA7B6B00EDCBAC /* JapaneseTagTests.h */,
+				D8D6343D15DA7B6B00EDCBAC /* JapaneseTagTests.m */,
+				D8D6343715DA7B6B00EDCBAC /* Supporting Files */,
+			);
+			path = JapaneseTagTests;
+			sourceTree = "<group>";
+		};
+		D8D6343715DA7B6B00EDCBAC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8D6343815DA7B6B00EDCBAC /* JapaneseTagTests-Info.plist */,
+				D8D6343915DA7B6B00EDCBAC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8D6340215DA7B6A00EDCBAC /* JapaneseTag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D6344115DA7B6B00EDCBAC /* Build configuration list for PBXNativeTarget "JapaneseTag" */;
+			buildPhases = (
+				D8D633FF15DA7B6A00EDCBAC /* Sources */,
+				D8D6340015DA7B6A00EDCBAC /* Frameworks */,
+				D8D6340115DA7B6A00EDCBAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JapaneseTag;
+			productName = JapaneseTag;
+			productReference = D8D6340315DA7B6A00EDCBAC /* JapaneseTag.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8D6342E15DA7B6A00EDCBAC /* JapaneseTagTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D6344415DA7B6B00EDCBAC /* Build configuration list for PBXNativeTarget "JapaneseTagTests" */;
+			buildPhases = (
+				D8D6342A15DA7B6A00EDCBAC /* Sources */,
+				D8D6342B15DA7B6A00EDCBAC /* Frameworks */,
+				D8D6342C15DA7B6A00EDCBAC /* Resources */,
+				D8D6342D15DA7B6A00EDCBAC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8D6343515DA7B6A00EDCBAC /* PBXTargetDependency */,
+			);
+			name = JapaneseTagTests;
+			productName = JapaneseTagTests;
+			productReference = D8D6342F15DA7B6A00EDCBAC /* JapaneseTagTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8D633FA15DA7B6A00EDCBAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JT;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Tatsuo Ikeda";
+			};
+			buildConfigurationList = D8D633FD15DA7B6A00EDCBAC /* Build configuration list for PBXProject "JapaneseTag" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8D633F815DA7B6A00EDCBAC;
+			productRefGroup = D8D6340415DA7B6A00EDCBAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8D6340215DA7B6A00EDCBAC /* JapaneseTag */,
+				D8D6342E15DA7B6A00EDCBAC /* JapaneseTagTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8D6340115DA7B6A00EDCBAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D6341215DA7B6A00EDCBAC /* InfoPlist.strings in Resources */,
+				D8D6341B15DA7B6A00EDCBAC /* MainStoryboard.storyboard in Resources */,
+				D8D6342015DA7B6A00EDCBAC /* first.png in Resources */,
+				D8D6342215DA7B6A00EDCBAC /* first@2x.png in Resources */,
+				D8D6342715DA7B6A00EDCBAC /* second.png in Resources */,
+				D8D6342915DA7B6A00EDCBAC /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D6342C15DA7B6A00EDCBAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D6343B15DA7B6B00EDCBAC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8D6342D15DA7B6A00EDCBAC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8D633FF15DA7B6A00EDCBAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D6341415DA7B6A00EDCBAC /* main.m in Sources */,
+				D8D6341815DA7B6A00EDCBAC /* JTAppDelegate.m in Sources */,
+				D8D6341E15DA7B6A00EDCBAC /* JTFirstViewController.m in Sources */,
+				D8D6342515DA7B6A00EDCBAC /* JTSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D6342A15DA7B6A00EDCBAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D6343E15DA7B6B00EDCBAC /* JapaneseTagTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8D6343515DA7B6A00EDCBAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8D6340215DA7B6A00EDCBAC /* JapaneseTag */;
+			targetProxy = D8D6343415DA7B6A00EDCBAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8D6341015DA7B6A00EDCBAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8D6341115DA7B6A00EDCBAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D8D6341915DA7B6A00EDCBAC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8D6341A15DA7B6A00EDCBAC /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		D8D6343915DA7B6B00EDCBAC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8D6343A15DA7B6B00EDCBAC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8D6343F15DA7B6B00EDCBAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D8D6344015DA7B6B00EDCBAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8D6344215DA7B6B00EDCBAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JapaneseTag/JapaneseTag-Prefix.pch";
+				INFOPLIST_FILE = "JapaneseTag/JapaneseTag-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D8D6344315DA7B6B00EDCBAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JapaneseTag/JapaneseTag-Prefix.pch";
+				INFOPLIST_FILE = "JapaneseTag/JapaneseTag-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D8D6344515DA7B6B00EDCBAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JapaneseTag.app/JapaneseTag";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JapaneseTag/JapaneseTag-Prefix.pch";
+				INFOPLIST_FILE = "JapaneseTagTests/JapaneseTagTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D8D6344615DA7B6B00EDCBAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JapaneseTag.app/JapaneseTag";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JapaneseTag/JapaneseTag-Prefix.pch";
+				INFOPLIST_FILE = "JapaneseTagTests/JapaneseTagTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8D633FD15DA7B6A00EDCBAC /* Build configuration list for PBXProject "JapaneseTag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D6343F15DA7B6B00EDCBAC /* Debug */,
+				D8D6344015DA7B6B00EDCBAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D6344115DA7B6B00EDCBAC /* Build configuration list for PBXNativeTarget "JapaneseTag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D6344215DA7B6B00EDCBAC /* Debug */,
+				D8D6344315DA7B6B00EDCBAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D8D6344415DA7B6B00EDCBAC /* Build configuration list for PBXNativeTarget "JapaneseTagTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D6344515DA7B6B00EDCBAC /* Debug */,
+				D8D6344615DA7B6B00EDCBAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8D633FA15DA7B6A00EDCBAC /* Project object */;
+}
