@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D809D71215DC10290022DE31 /* japanese-tag.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D809D71115DC10290022DE31 /* japanese-tag.jpg */; };
+		D87E727115DBF17A0039B823 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87E727015DBF17A0039B823 /* MapKit.framework */; };
+		D87E727415DBF1810039B823 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87E727315DBF1810039B823 /* CoreLocation.framework */; };
+		D8BFB16F15DC13CC007204A2 /* 1445315.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BFB16E15DC13CC007204A2 /* 1445315.png */; };
+		D8BFB17215DC15D4007204A2 /* japanese-tag-keepout.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BFB17115DC15D4007204A2 /* japanese-tag-keepout.png */; };
+		D8BFB17515DC1767007204A2 /* JTBootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFB17415DC1767007204A2 /* JTBootViewController.m */; };
 		D8D6340815DA7B6A00EDCBAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6340715DA7B6A00EDCBAC /* UIKit.framework */; };
 		D8D6340A15DA7B6A00EDCBAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6340915DA7B6A00EDCBAC /* Foundation.framework */; };
 		D8D6340C15DA7B6A00EDCBAC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6340B15DA7B6A00EDCBAC /* CoreGraphics.framework */; };
@@ -41,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D809D71115DC10290022DE31 /* japanese-tag.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "japanese-tag.jpg"; sourceTree = "<group>"; };
+		D87E727015DBF17A0039B823 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D87E727315DBF1810039B823 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D8BFB16E15DC13CC007204A2 /* 1445315.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1445315.png; sourceTree = "<group>"; };
+		D8BFB17115DC15D4007204A2 /* japanese-tag-keepout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "japanese-tag-keepout.png"; sourceTree = "<group>"; };
+		D8BFB17315DC1767007204A2 /* JTBootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTBootViewController.h; sourceTree = "<group>"; };
+		D8BFB17415DC1767007204A2 /* JTBootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTBootViewController.m; sourceTree = "<group>"; };
 		D8D6340315DA7B6A00EDCBAC /* JapaneseTag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseTag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D6340715DA7B6A00EDCBAC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D8D6340915DA7B6A00EDCBAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,12 +67,12 @@
 		D8D6341A15DA7B6A00EDCBAC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		D8D6341C15DA7B6A00EDCBAC /* JTFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTFirstViewController.h; sourceTree = "<group>"; };
 		D8D6341D15DA7B6A00EDCBAC /* JTFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTFirstViewController.m; sourceTree = "<group>"; };
-		D8D6341F15DA7B6A00EDCBAC /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		D8D6342115DA7B6A00EDCBAC /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		D8D6341F15DA7B6A00EDCBAC /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = first.png; path = JapaneseTag/first.png; sourceTree = "<group>"; };
+		D8D6342115DA7B6A00EDCBAC /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "first@2x.png"; path = "JapaneseTag/first@2x.png"; sourceTree = "<group>"; };
 		D8D6342315DA7B6A00EDCBAC /* JTSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTSecondViewController.h; sourceTree = "<group>"; };
 		D8D6342415DA7B6A00EDCBAC /* JTSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTSecondViewController.m; sourceTree = "<group>"; };
-		D8D6342615DA7B6A00EDCBAC /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		D8D6342815DA7B6A00EDCBAC /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		D8D6342615DA7B6A00EDCBAC /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = second.png; path = JapaneseTag/second.png; sourceTree = "<group>"; };
+		D8D6342815DA7B6A00EDCBAC /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "second@2x.png"; path = "JapaneseTag/second@2x.png"; sourceTree = "<group>"; };
 		D8D6342F15DA7B6A00EDCBAC /* JapaneseTagTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapaneseTagTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D6343015DA7B6A00EDCBAC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D8D6343815DA7B6B00EDCBAC /* JapaneseTagTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JapaneseTagTests-Info.plist"; sourceTree = "<group>"; };
@@ -68,8 +81,8 @@
 		D8D6343D15DA7B6B00EDCBAC /* JapaneseTagTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JapaneseTagTests.m; sourceTree = "<group>"; };
 		D8D6344B15DA894C00EDCBAC /* JTThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTThirdViewController.h; sourceTree = "<group>"; };
 		D8D6344C15DA894C00EDCBAC /* JTThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTThirdViewController.m; sourceTree = "<group>"; };
-		D8D6344F15DA8A8100EDCBAC /* third.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = third.png; sourceTree = "<group>"; };
-		D8D6345015DA8A8100EDCBAC /* third@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "third@2x.png"; sourceTree = "<group>"; };
+		D8D6344F15DA8A8100EDCBAC /* third.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = third.png; path = JapaneseTag/third.png; sourceTree = "<group>"; };
+		D8D6345015DA8A8100EDCBAC /* third@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "third@2x.png"; path = "JapaneseTag/third@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87E727415DBF1810039B823 /* CoreLocation.framework in Frameworks */,
+				D87E727115DBF17A0039B823 /* MapKit.framework in Frameworks */,
 				D8D6340815DA7B6A00EDCBAC /* UIKit.framework in Frameworks */,
 				D8D6340A15DA7B6A00EDCBAC /* Foundation.framework in Frameworks */,
 				D8D6340C15DA7B6A00EDCBAC /* CoreGraphics.framework in Frameworks */,
@@ -96,11 +111,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D87E727515DBF1A50039B823 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8BFB17115DC15D4007204A2 /* japanese-tag-keepout.png */,
+				D8BFB16E15DC13CC007204A2 /* 1445315.png */,
+				D809D71115DC10290022DE31 /* japanese-tag.jpg */,
+				D8D6344F15DA8A8100EDCBAC /* third.png */,
+				D8D6345015DA8A8100EDCBAC /* third@2x.png */,
+				D8D6341F15DA7B6A00EDCBAC /* first.png */,
+				D8D6342115DA7B6A00EDCBAC /* first@2x.png */,
+				D8D6342615DA7B6A00EDCBAC /* second.png */,
+				D8D6342815DA7B6A00EDCBAC /* second@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		D8D633F815DA7B6A00EDCBAC = {
 			isa = PBXGroup;
 			children = (
 				D8D6340D15DA7B6A00EDCBAC /* JapaneseTag */,
 				D8D6343615DA7B6A00EDCBAC /* JapaneseTagTests */,
+				D87E727515DBF1A50039B823 /* Resources */,
 				D8D6340615DA7B6A00EDCBAC /* Frameworks */,
 				D8D6340415DA7B6A00EDCBAC /* Products */,
 			);
@@ -118,6 +150,8 @@
 		D8D6340615DA7B6A00EDCBAC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D87E727315DBF1810039B823 /* CoreLocation.framework */,
+				D87E727015DBF17A0039B823 /* MapKit.framework */,
 				D8D6340715DA7B6A00EDCBAC /* UIKit.framework */,
 				D8D6340915DA7B6A00EDCBAC /* Foundation.framework */,
 				D8D6340B15DA7B6A00EDCBAC /* CoreGraphics.framework */,
@@ -131,19 +165,15 @@
 			children = (
 				D8D6341615DA7B6A00EDCBAC /* JTAppDelegate.h */,
 				D8D6341715DA7B6A00EDCBAC /* JTAppDelegate.m */,
-				D8D6344F15DA8A8100EDCBAC /* third.png */,
-				D8D6345015DA8A8100EDCBAC /* third@2x.png */,
 				D8D6341915DA7B6A00EDCBAC /* MainStoryboard.storyboard */,
+				D8BFB17315DC1767007204A2 /* JTBootViewController.h */,
+				D8BFB17415DC1767007204A2 /* JTBootViewController.m */,
 				D8D6341C15DA7B6A00EDCBAC /* JTFirstViewController.h */,
 				D8D6341D15DA7B6A00EDCBAC /* JTFirstViewController.m */,
 				D8D6344B15DA894C00EDCBAC /* JTThirdViewController.h */,
 				D8D6344C15DA894C00EDCBAC /* JTThirdViewController.m */,
-				D8D6341F15DA7B6A00EDCBAC /* first.png */,
-				D8D6342115DA7B6A00EDCBAC /* first@2x.png */,
 				D8D6342315DA7B6A00EDCBAC /* JTSecondViewController.h */,
 				D8D6342415DA7B6A00EDCBAC /* JTSecondViewController.m */,
-				D8D6342615DA7B6A00EDCBAC /* second.png */,
-				D8D6342815DA7B6A00EDCBAC /* second@2x.png */,
 				D8D6340E15DA7B6A00EDCBAC /* Supporting Files */,
 			);
 			path = JapaneseTag;
@@ -259,6 +289,9 @@
 				D8D6342915DA7B6A00EDCBAC /* second@2x.png in Resources */,
 				D8D6345115DA8A8100EDCBAC /* third.png in Resources */,
 				D8D6345215DA8A8100EDCBAC /* third@2x.png in Resources */,
+				D809D71215DC10290022DE31 /* japanese-tag.jpg in Resources */,
+				D8BFB16F15DC13CC007204A2 /* 1445315.png in Resources */,
+				D8BFB17215DC15D4007204A2 /* japanese-tag-keepout.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +331,7 @@
 				D8D6341E15DA7B6A00EDCBAC /* JTFirstViewController.m in Sources */,
 				D8D6342515DA7B6A00EDCBAC /* JTSecondViewController.m in Sources */,
 				D8D6344D15DA894C00EDCBAC /* JTThirdViewController.m in Sources */,
+				D8BFB17515DC1767007204A2 /* JTBootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
