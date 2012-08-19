@@ -10,8 +10,21 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface JTThirdViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>
+
+@interface JTThirdViewController : UIViewController <MKMapViewDelegate,
+    CLLocationManagerDelegate,
+    UISearchBarDelegate
+>
 
 
-@property (nonatomic) IBOutlet MKMapView *mapView;
+@property (strong, nonatomic) CLLocationManager* locationManager;
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+@property (strong, nonatomic) IBOutlet UISearchBar *search;
 @end
+
+
+@interface SimpleAnnotation : NSObject <MKAnnotation>
+
+@property (nonatomic, copy) CLLocation* location;
+@end
+
