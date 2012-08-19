@@ -13,7 +13,6 @@
 @end
 
 @implementation SimpleAnnotation
-@synthesize location;
 
 #pragma mark -
 #pragma mark MKAnnotation
@@ -35,9 +34,6 @@
 @end
 
 @implementation JTMapViewController
-@synthesize mapView = _mapView;
-@synthesize search = _search;
-@synthesize locationManager = _locationManager;
 
 
 - (void)viewDidLoad
@@ -46,7 +42,7 @@
 	// Do any additional setup after loading the view.
 
     
-    //// map
+    ////// map
     self.mapView.showsUserLocation = YES;
     self.mapView.delegate = self;
     [self.mapView.userLocation addObserver:self forKeyPath:@"location" options:0 context:NULL];
