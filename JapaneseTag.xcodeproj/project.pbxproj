@@ -31,7 +31,7 @@
 		D8D6343315DA7B6A00EDCBAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6340915DA7B6A00EDCBAC /* Foundation.framework */; };
 		D8D6343B15DA7B6B00EDCBAC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8D6343915DA7B6B00EDCBAC /* InfoPlist.strings */; };
 		D8D6343E15DA7B6B00EDCBAC /* JapaneseTagTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D6343D15DA7B6B00EDCBAC /* JapaneseTagTests.m */; };
-		D8D6344D15DA894C00EDCBAC /* JTThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D6344C15DA894C00EDCBAC /* JTThirdViewController.m */; };
+		D8D6344D15DA894C00EDCBAC /* JTMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D6344C15DA894C00EDCBAC /* JTMapViewController.m */; };
 		D8D6345115DA8A8100EDCBAC /* third.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D6344F15DA8A8100EDCBAC /* third.png */; };
 		D8D6345215DA8A8100EDCBAC /* third@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D6345015DA8A8100EDCBAC /* third@2x.png */; };
 /* End PBXBuildFile section */
@@ -77,8 +77,8 @@
 		D8D6343A15DA7B6B00EDCBAC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D8D6343C15DA7B6B00EDCBAC /* JapaneseTagTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JapaneseTagTests.h; sourceTree = "<group>"; };
 		D8D6343D15DA7B6B00EDCBAC /* JapaneseTagTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JapaneseTagTests.m; sourceTree = "<group>"; };
-		D8D6344B15DA894C00EDCBAC /* JTThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTThirdViewController.h; sourceTree = "<group>"; };
-		D8D6344C15DA894C00EDCBAC /* JTThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTThirdViewController.m; sourceTree = "<group>"; };
+		D8D6344B15DA894C00EDCBAC /* JTMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTMapViewController.h; sourceTree = "<group>"; };
+		D8D6344C15DA894C00EDCBAC /* JTMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTMapViewController.m; sourceTree = "<group>"; };
 		D8D6344F15DA8A8100EDCBAC /* third.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = third.png; sourceTree = "<group>"; };
 		D8D6345015DA8A8100EDCBAC /* third@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "third@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,8 +149,8 @@
 				D8D6341915DA7B6A00EDCBAC /* MainStoryboard.storyboard */,
 				D8BFB17315DC1767007204A2 /* JTBootViewController.h */,
 				D8BFB17415DC1767007204A2 /* JTBootViewController.m */,
-				D8D6344B15DA894C00EDCBAC /* JTThirdViewController.h */,
-				D8D6344C15DA894C00EDCBAC /* JTThirdViewController.m */,
+				D8D6344B15DA894C00EDCBAC /* JTMapViewController.h */,
+				D8D6344C15DA894C00EDCBAC /* JTMapViewController.m */,
 				D8D6340E15DA7B6A00EDCBAC /* Supporting Files */,
 			);
 			path = JapaneseTag;
@@ -318,7 +318,7 @@
 			files = (
 				D8D6341415DA7B6A00EDCBAC /* main.m in Sources */,
 				D8D6341815DA7B6A00EDCBAC /* JTAppDelegate.m in Sources */,
-				D8D6344D15DA894C00EDCBAC /* JTThirdViewController.m in Sources */,
+				D8D6344D15DA894C00EDCBAC /* JTMapViewController.m in Sources */,
 				D8BFB17515DC1767007204A2 /* JTBootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

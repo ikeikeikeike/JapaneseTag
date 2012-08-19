@@ -5,11 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
-        <!--Third View Controller - Third-->
+        <!--Map View Controller - Third-->
         <scene sceneID="hQ6-0c-9I8">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFf-OQ-Rh4" sceneMemberID="firstResponder"/>
-                <viewController title="Third" id="vhh-Er-gn1" customClass="JTThirdViewController" sceneMemberID="viewController">
+                <viewController title="Third" id="vhh-Er-gn1" customClass="JTMapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tjz-S1-qHl">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,13 +113,6 @@
     <classes>
         <class className="JTBootViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JTBootViewController.h"/>
-        </class>
-        <class className="JTThirdViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/JTThirdViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="search" candidateClass="UISearchBar"/>
-            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

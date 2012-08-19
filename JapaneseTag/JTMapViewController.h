@@ -11,7 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 
 
-@interface JTThirdViewController : UIViewController <MKMapViewDelegate,
+@interface JTMapViewController : UIViewController <MKMapViewDelegate,
     CLLocationManagerDelegate,
     UISearchBarDelegate
 >

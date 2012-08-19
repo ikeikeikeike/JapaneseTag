@@ -6,7 +6,7 @@
 //  Copyright (c) 2012年 Tatsuo Ikeda. All rights reserved.
 //
 
-#import "JTThirdViewController.h"
+#import "JTMapViewController.h"
 
 
 @interface SimpleAnnotation ()
@@ -31,10 +31,10 @@
 
 
 
-@interface JTThirdViewController ()
+@interface JTMapViewController ()
 @end
 
-@implementation JTThirdViewController
+@implementation JTMapViewController
 @synthesize mapView = _mapView;
 @synthesize search = _search;
 @synthesize locationManager = _locationManager;
