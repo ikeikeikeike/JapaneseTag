@@ -11,20 +11,17 @@
 #import <CoreLocation/CoreLocation.h>
 
 
+
 @interface JTMapViewController : UIViewController <MKMapViewDelegate,
     CLLocationManagerDelegate,
-    UISearchBarDelegate
+    UISearchBarDelegate,
+    MKAnnotation
 >
 
-
-@property (strong, nonatomic) CLLocationManager* locationManager;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) IBOutlet UISearchBar *search;
+@property (strong, nonatomic) CLLocationManager* locationManager;
+
+- (void)setPinToCoordinate:(CLLocation*)location;
+- (void)handleLongTap:(UILongPressGestureRecognizer *)recognizer;
 @end
-
-
-@interface SimpleAnnotation : NSObject <MKAnnotation>
-
-@property (nonatomic, copy) CLLocation* location;
-@end
-
