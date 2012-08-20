@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D809D71215DC10290022DE31 /* japanese-tag.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D809D71115DC10290022DE31 /* japanese-tag.jpg */; };
 		D81788DB15DC256300A69882 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D81788DA15DC256200A69882 /* Default.png */; };
 		D87E727115DBF17A0039B823 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87E727015DBF17A0039B823 /* MapKit.framework */; };
 		D87E727415DBF1810039B823 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87E727315DBF1810039B823 /* CoreLocation.framework */; };
 		D89CA92B15DC2DCD004F34EA /* icon-guide.png in Resources */ = {isa = PBXBuildFile; fileRef = D89CA92A15DC2DCC004F34EA /* icon-guide.png */; };
-		D8BFB16F15DC13CC007204A2 /* 1445315.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BFB16E15DC13CC007204A2 /* 1445315.png */; };
 		D8BFB17215DC15D4007204A2 /* japanese-tag-keepout.png in Resources */ = {isa = PBXBuildFile; fileRef = D8BFB17115DC15D4007204A2 /* japanese-tag-keepout.png */; };
 		D8BFB17515DC1767007204A2 /* JTBootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8BFB17415DC1767007204A2 /* JTBootViewController.m */; };
 		D8D6340815DA7B6A00EDCBAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6340715DA7B6A00EDCBAC /* UIKit.framework */; };
@@ -22,10 +20,6 @@
 		D8D6341415DA7B6A00EDCBAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D6341315DA7B6A00EDCBAC /* main.m */; };
 		D8D6341815DA7B6A00EDCBAC /* JTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D6341715DA7B6A00EDCBAC /* JTAppDelegate.m */; };
 		D8D6341B15DA7B6A00EDCBAC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D6341915DA7B6A00EDCBAC /* MainStoryboard.storyboard */; };
-		D8D6342015DA7B6A00EDCBAC /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D6341F15DA7B6A00EDCBAC /* first.png */; };
-		D8D6342215DA7B6A00EDCBAC /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D6342115DA7B6A00EDCBAC /* first@2x.png */; };
-		D8D6342715DA7B6A00EDCBAC /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D6342615DA7B6A00EDCBAC /* second.png */; };
-		D8D6342915DA7B6A00EDCBAC /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8D6342815DA7B6A00EDCBAC /* second@2x.png */; };
 		D8D6343115DA7B6A00EDCBAC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6343015DA7B6A00EDCBAC /* SenTestingKit.framework */; };
 		D8D6343215DA7B6A00EDCBAC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6340715DA7B6A00EDCBAC /* UIKit.framework */; };
 		D8D6343315DA7B6A00EDCBAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D6340915DA7B6A00EDCBAC /* Foundation.framework */; };
@@ -47,12 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D809D71115DC10290022DE31 /* japanese-tag.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "japanese-tag.jpg"; path = "../japanese-tag.jpg"; sourceTree = "<group>"; };
 		D81788DA15DC256200A69882 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		D87E727015DBF17A0039B823 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D87E727315DBF1810039B823 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D89CA92A15DC2DCC004F34EA /* icon-guide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-guide.png"; path = "../icon-guide.png"; sourceTree = "<group>"; };
-		D8BFB16E15DC13CC007204A2 /* 1445315.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1445315.png; path = ../1445315.png; sourceTree = "<group>"; };
 		D8BFB17115DC15D4007204A2 /* japanese-tag-keepout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "japanese-tag-keepout.png"; path = "../japanese-tag-keepout.png"; sourceTree = "<group>"; };
 		D8BFB17315DC1767007204A2 /* JTBootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTBootViewController.h; sourceTree = "<group>"; };
 		D8BFB17415DC1767007204A2 /* JTBootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTBootViewController.m; sourceTree = "<group>"; };
@@ -67,10 +59,6 @@
 		D8D6341615DA7B6A00EDCBAC /* JTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JTAppDelegate.h; sourceTree = "<group>"; };
 		D8D6341715DA7B6A00EDCBAC /* JTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JTAppDelegate.m; sourceTree = "<group>"; };
 		D8D6341A15DA7B6A00EDCBAC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		D8D6341F15DA7B6A00EDCBAC /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		D8D6342115DA7B6A00EDCBAC /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		D8D6342615DA7B6A00EDCBAC /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		D8D6342815DA7B6A00EDCBAC /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		D8D6342F15DA7B6A00EDCBAC /* JapaneseTagTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapaneseTagTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D6343015DA7B6A00EDCBAC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		D8D6343815DA7B6B00EDCBAC /* JapaneseTagTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JapaneseTagTests-Info.plist"; sourceTree = "<group>"; };
@@ -162,14 +150,8 @@
 				D89CA92A15DC2DCC004F34EA /* icon-guide.png */,
 				D81788DA15DC256200A69882 /* Default.png */,
 				D8BFB17115DC15D4007204A2 /* japanese-tag-keepout.png */,
-				D8BFB16E15DC13CC007204A2 /* 1445315.png */,
-				D809D71115DC10290022DE31 /* japanese-tag.jpg */,
 				D8D6344F15DA8A8100EDCBAC /* third.png */,
 				D8D6345015DA8A8100EDCBAC /* third@2x.png */,
-				D8D6341F15DA7B6A00EDCBAC /* first.png */,
-				D8D6342115DA7B6A00EDCBAC /* first@2x.png */,
-				D8D6342615DA7B6A00EDCBAC /* second.png */,
-				D8D6342815DA7B6A00EDCBAC /* second@2x.png */,
 				D8D6340F15DA7B6A00EDCBAC /* JapaneseTag-Info.plist */,
 				D8D6341015DA7B6A00EDCBAC /* InfoPlist.strings */,
 				D8D6341315DA7B6A00EDCBAC /* main.m */,
@@ -271,14 +253,8 @@
 			files = (
 				D8D6341215DA7B6A00EDCBAC /* InfoPlist.strings in Resources */,
 				D8D6341B15DA7B6A00EDCBAC /* MainStoryboard.storyboard in Resources */,
-				D8D6342015DA7B6A00EDCBAC /* first.png in Resources */,
-				D8D6342215DA7B6A00EDCBAC /* first@2x.png in Resources */,
-				D8D6342715DA7B6A00EDCBAC /* second.png in Resources */,
-				D8D6342915DA7B6A00EDCBAC /* second@2x.png in Resources */,
 				D8D6345115DA8A8100EDCBAC /* third.png in Resources */,
 				D8D6345215DA8A8100EDCBAC /* third@2x.png in Resources */,
-				D809D71215DC10290022DE31 /* japanese-tag.jpg in Resources */,
-				D8BFB16F15DC13CC007204A2 /* 1445315.png in Resources */,
 				D8BFB17215DC15D4007204A2 /* japanese-tag-keepout.png in Resources */,
 				D81788DB15DC256300A69882 /* Default.png in Resources */,
 				D89CA92B15DC2DCD004F34EA /* icon-guide.png in Resources */,
