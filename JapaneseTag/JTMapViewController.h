@@ -14,9 +14,11 @@
 
 @interface JTMapViewController : UIViewController <MKMapViewDelegate,
     CLLocationManagerDelegate,
+    MKReverseGeocoderDelegate,
     UISearchBarDelegate,
     MKAnnotation
 >
+// Geo deprecated
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) IBOutlet UISearchBar *search;

@@ -30,7 +30,8 @@
     
     /* initial default location(annotation). */
     // Add method
-    UILongPressGestureRecognizer *recognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongTap:)];
+    UILongPressGestureRecognizer *recognizer = [[UILongPressGestureRecognizer alloc]
+                                                initWithTarget:self action:@selector(handleLongTap:)];
     recognizer.minimumPressDuration = .8;
     [self.mapView addGestureRecognizer:recognizer];
     recognizer = nil;
@@ -63,7 +64,6 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
     self.mapView.centerCoordinate = self.mapView.userLocation.location.coordinate;
-    // 一度しか現在地に移動しないなら removeObserver する
     [self.mapView.userLocation removeObserver:self forKeyPath:@"location"];
 }
 
@@ -71,21 +71,22 @@
 #pragma mark - map
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
-    /* Pinの挙動 */
+    /* Oops Pin */
     
 #ifdef DEBUG_ANNOTATION
     NSLog(@"viewForAnnotation");
 #endif
-    // 現在地表示なら nil を返す  
+    // userlocation is nil
     if (annotation == mapView.userLocation) {
         return nil;
     }
     
-    MKPinAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"LongTap"];
+    MKPinAnnotationView *annotationView = [[MKPinAnnotationView alloc]
+                                           initWithAnnotation:annotation reuseIdentifier:@"LongTapAnnotation"];
     
     [annotationView setPinColor:MKPinAnnotationColorGreen];
     [annotationView setAnimatesDrop:YES];
-    [annotationView setCanShowCallout:YES];  // >　矢印を出すか出さないか
+    [annotationView setCanShowCallout:YES];
     [annotationView setRightCalloutAccessoryView:[UIButton buttonWithType:UIButtonTypeDetailDisclosure]];
     
     //UIImage *pinImage = [UIImage imageNamed:@"pin-image.png"];
@@ -98,31 +99,29 @@
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
 {
-    /* Pinの詳細表示 */
+    /* Pin Detail */
     
-    // ログを取得する
-//    NSDictionary *logDict;
-//    logDict = (view.annotation).logDict;
-    
-    // メッセージを作成する
-//    NSMutableString *message;
-//    message = [NSMutableString string];
-//    [message appendFormat:@"Date: %@\n", [logDict objectForKey:@"date"]];
-//    [message appendFormat:@"Lat: %@\n", [logDict objectForKey:@"latitude"]];
-//    [message appendFormat:@"Lon: %@\n", [logDict objectForKey:@"longitude"]];
-    
-    // アラートを表示する
+    NSMutableString *message;
+    message = [NSMutableString string];
+
+//    [message appendFormat:@"SubTitle: %@\n", view.annotation.subtitle];
+    [message appendFormat:@"Title: %@\n", view.annotation.title];
+    [message appendFormat:@"Latitude: %f\n", view.annotation.coordinate.latitude];
+    [message appendFormat:@"Longitude: %f\n", view.annotation.coordinate.longitude];
+        
+    // View alert
     UIAlertView* alertView;
-//    alertView = [[UIAlertView alloc] initWithTitle:@"Log Info" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:NULL];
-//    [alertView autorelease];
+    alertView = [[UIAlertView alloc] initWithTitle:@"Log Info"
+                                           message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:NULL];
     [alertView show];
 }
+
 
 
 #pragma mark - SearchBar
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
 {
-    // Search Barがタップされたときの処理を実装する.
+    // tap Search Bar
 
 #ifdef DEBUG_SEARCH
     NSLog(@"searchBarTextDidBeginEditing - %@", searchBar.text);
@@ -131,7 +130,7 @@
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
-    // searchTextを用いて、検索処理を実装する.
+    // searchText
 
 #ifdef DEBUG_SEARCH
     NSLog(@"searchBar - %@", searchText);
@@ -140,35 +139,36 @@
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
-    // 決定時の処理を実装.
+    // search
     
 #ifdef DEBUG_SEARCH
     NSLog(@"searchBarSearchButtonClicked - %@", searchBar.text);
 #endif
     
-    [searchBar resignFirstResponder];  // 元のViewに戻る.
+    [searchBar resignFirstResponder];
 }
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
 {
-    // Cancel時の処理を実装.
+    // Cancel
     
 #ifdef DEBUG_SEARCH
     NSLog(@"searchBarCancelButtonClicked - %@", searchBar.text);
 #endif
-    [searchBar resignFirstResponder];  // 元のViewに戻る.
+    [searchBar resignFirstResponder]; 
 }
 
 
 #pragma mark - userfuncs
 - (void)setPinToCoordinate:(CLLocation*)location
 {
-    /* My 初期ロケーション設定 */
+    /* My Default Location */
     
     MKCoordinateSpan span = MKCoordinateSpanMake(0.05, 0.05);
     CLLocationCoordinate2D centerCoordinate = location.coordinate;
     MKCoordinateRegion coordinateRegion = MKCoordinateRegionMake(centerCoordinate, span);
     [self.mapView setRegion:coordinateRegion animated:YES];
+    
     return;
 }
 
@@ -187,20 +187,42 @@
         float longitude = coord.longitude;
         NSLog(@"%@:%f %@:%f", @"longitude:",longitude,@"latitude",latitude);
 #endif
+        
+        // TODO: Geo deprecated 
+        MKReverseGeocoder *reverseGeocoder;
+        reverseGeocoder = [[MKReverseGeocoder alloc] initWithCoordinate:coord];
+        reverseGeocoder.delegate = self;
+        [reverseGeocoder start];
+        
         // move animation
 //        MKCoordinateRegion region;
 //        region.span = MKCoordinateSpanMake(0.05, 0.05);
 //        region.center = coord;
-//        [self.mapView setRegion:region animated:YES];
-        
-        MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
-        annotation.coordinate = coord;
-        annotation.title = @"Title";    // TODO Get annotatoin title by the AnyAPI.
-        annotation.subtitle = @"Subtile";    // TODO Get annotation title by the AnyAPI.
-        
-        [self.mapView addAnnotation:annotation];
+//        [self.mapView setRegion:region animated:YES];        
     }
     return;
 }
+
+
+- (void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFindPlacemark:(MKPlacemark*)placemark
+{
+#ifdef DEBUG_ANNOTATION
+    NSLog(@"title: %@", placemark.title);
+#endif
+    
+    MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+    annotation.coordinate = placemark.coordinate;
+    annotation.title = placemark.title;
+    annotation.subtitle = placemark.title;
+    
+    [self.mapView addAnnotation:annotation];
+    
+}
+
+- (void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFailWithError:(NSError*)error
+{
+    NSLog(@"error");
+}
+
 
 @end
