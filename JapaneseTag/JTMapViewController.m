@@ -3,7 +3,7 @@
 //  JapaneseTag
 //
 //  Created by tatsuo ikeda on 12/08/14.
-//  Copyright (c) 2012年 Tatsuo Ikeda. All rights reserved.
+//  Copyright (c) 2012 Tatsuo Ikeda. All rights reserved.
 //
 
 #import "JTMapViewController.h"
@@ -20,18 +20,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-
     
     /* map */
-//    self.mapView.mapType = MKMapTypeHybrid;
     self.mapView.showsUserLocation = YES;
     self.mapView.delegate = self;
     [self.mapView.userLocation addObserver:self forKeyPath:@"location" options:0 context:NULL];
     
+    
     /* initial default location(annotation). */
     // Add method
-    UILongPressGestureRecognizer *recognizer = [[UILongPressGestureRecognizer alloc]
-                                                initWithTarget:self action:@selector(handleLongTap:)];
+    UILongPressGestureRecognizer *recognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongTap:)];
     recognizer.minimumPressDuration = .8;
     [self.mapView addGestureRecognizer:recognizer];
     recognizer = nil;
@@ -81,8 +79,7 @@
         return nil;
     }
     
-    MKPinAnnotationView *annotationView = [[MKPinAnnotationView alloc]
-                                           initWithAnnotation:annotation reuseIdentifier:@"LongTapAnnotation"];
+    MKPinAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"LongTapAnnotation"];
     
     [annotationView setPinColor:MKPinAnnotationColorGreen];
     [annotationView setAnimatesDrop:YES];
@@ -111,8 +108,7 @@
         
     // View alert
     UIAlertView* alertView;
-    alertView = [[UIAlertView alloc] initWithTitle:@"Log Info"
-                                           message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:NULL];
+    alertView = [[UIAlertView alloc] initWithTitle:@"Log Info" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:NULL];
     [alertView show];
 }
 
